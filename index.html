@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bela Film Co | Cinematic Family Documentaries</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --red: #9c2a2a;
+      --warm: #d4b48c;
+      --dark: #0f0c0a;
+      --cream: #f8f1e9;
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--dark);
+      color: #e8d5c0;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15,12,10,0.95);
+      backdrop-filter: blur(16px);
+      z-index: 1000;
+    }
+    .nav-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 1.3rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.9rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+      color: white;
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(15,12,10,0.65), rgba(15,12,10,0.75)), url('https://picsum.photos/id/1015/1920/1080') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(3.4rem, 8vw, 6rem);
+      font-weight: 700;
+      letter-spacing: -2.5px;
+      line-height: 1.05;
+      margin-bottom: 1.2rem;
+    }
+    .hero p {
+      font-size: 1.45rem;
+      max-width: 720px;
+      margin: 0 auto 2.5rem;
+      opacity: 0.95;
+    }
+
+    .btn {
+      background: var(--red);
+      color: white;
+      padding: 18px 52px;
+      border-radius: 60px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.4s;
+    }
+    .btn:hover {
+      background: #b33a3a;
+      transform: translateY(-4px);
+    }
+
+    section { padding: 130px 20px; }
+    h2 {
+      font-size: clamp(2.6rem, 6vw, 3.6rem);
+      text-align: center;
+      margin-bottom: 4rem;
+      color: white;
+    }
+
+    .work-grid {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .project-card {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+      transition: all 0.5s;
+    }
+    .project-card:hover { transform: scale(1.04); }
+
+    .about {
+      background: var(--cream);
+      color: #3f2a1e;
+      text-align: center;
+    }
+
+    .contact {
+      background: var(--dark);
+      text-align: center;
+    }
+
+    footer {
+      background: #050503;
+      color: #777;
+      text-align: center;
+      padding: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      section { padding: 90px 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <div class="logo">BELA FILM CO</div>
+      <div class="nav-links">
+        <a href="#work" style="color:#e8d5c0; margin-right:2rem;">Work</a>
+        <a href="#about" style="color:#e8d5c0; margin-right:2rem;">About</a>
+        <a href="#contact" style="color:#e8d5c0;">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div>
+      <h1>Your Story,<br>Preserved Forever</h1>
+      <p>High-end cinematic documentaries for families, legacies, and family businesses.</p>
+      <a href="#contact" class="btn">Begin Your Film</a>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>Selected Stories</h2>
+    <div class="work-grid">
+      <div class="project-card">
+        <img src="https://picsum.photos/id/1015/800/500" alt="Family Legacy">
+        <div style="padding:1.8rem; background:#1a140f;">
+          <h3>Family Legacies</h3>
+          <p>Multi-generational stories told with warmth and cinematic beauty.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://picsum.photos/id/201/800/500" alt="Family Business">
+        <div style="padding:1.8rem; background:#1a140f;">
+          <h3>Family Business Chronicles</h3>
+          <p>The heart, sacrifice, and vision behind generational companies.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://picsum.photos/id/866/800/500" alt="Personal Story">
+        <div style="padding:1.8rem; background:#1a140f;">
+          <h3>Personal & Life Stories</h3>
+          <p>Intimate portraits of remarkable lives and journeys.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>We Are Your Personal Documentarian</h2>
+    <div style="max-width:800px; margin:0 auto; font-size:1.3rem;">
+      <p>Bela Film Co creates heirloom-quality cinematic documentaries for families and businesses who want to preserve their legacy with beauty, depth, and emotion.</p>
+      <p style="margin-top:2rem;">We don’t make commercials. We document real life — the laughter, the lessons, the love, and the hard-won wisdom — in a way that will move your family for generations.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Let's Preserve Your Story</h2>
+    <p style="font-size:1.4rem; max-width:700px; margin:0 auto 3rem; color:#d4b48c;">
+      High-ticket, limited projects. Only a few families and businesses per year.
+    </p>
+    <a href="mailto:harrisonburchett@gmail.com" class="btn">Start the Conversation</a>
+    <p style="margin-top:3rem;">
+      <a href="https://instagram.com/issoharrison" target="_blank" style="color:#d4b48c; font-size:2rem;">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Bela Film Co • Las Vegas, Nevada</p>
+  </footer>
+
+</body>
+</html>

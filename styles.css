@@ -839,6 +839,11 @@ address a {
 }
 
 .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.js .reveal {
   opacity: 0;
   transform: translateY(1.4rem);
   transition:
@@ -846,7 +851,8 @@ address a {
     transform 700ms var(--ease);
 }
 
-.reveal.is-visible {
+.js .hero .reveal,
+.js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -1012,7 +1018,8 @@ address a {
     animation-iteration-count: 1 !important;
   }
 
-  .reveal {
+  .reveal,
+  .js .reveal {
     opacity: 1;
     transform: none;
   }

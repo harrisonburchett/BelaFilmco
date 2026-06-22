@@ -258,7 +258,7 @@ select {
   isolation: isolate;
 }
 
-.hero-video,
+.hero-backdrop,
 .hero-overlay,
 .film-grain,
 .film-frame {
@@ -266,7 +266,8 @@ select {
   inset: 0;
 }
 
-.hero-video {
+/* CSS-only cinematic placeholder: no video or external hero asset is required. */
+.hero-backdrop {
   z-index: 0;
   background:
     linear-gradient(120deg, rgba(31, 24, 20, 0.92), rgba(58, 46, 40, 0.38) 48%, rgba(23, 21, 19, 0.88)),
